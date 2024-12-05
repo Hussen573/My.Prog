@@ -50,7 +50,7 @@ taskForm.addEventListener('submit', function(e) {
         taskDate.value = '';
         editMode = false;
         taskToEdit = null;
-        alert('تم حفظ المهمة بنجاح!');
+        
     }
 });
 
@@ -95,7 +95,7 @@ function addTaskToDOM(taskText, taskDueDate, completed = false) {
             taskList.removeChild(taskElement);
             removeTask(taskText);
             updateProgressBar(); // تحديث شريط التقدم بعد الحذف
-            alert('تم حذف المهمة!');
+            
         }
     });
 
